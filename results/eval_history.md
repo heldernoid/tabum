@@ -17,7 +17,7 @@ letter **0.294** (logreg 0.733–0.740 depending on split libs).
 | 14000 | 0.8333 | 0.8818 | 0.584 | letter resumed climbing (+0.016); cpu_act noisy (0.90→0.93→0.88 band); holdout cls steady ~0.834 |
 | 20000 | **0.8521** | 0.9333 | **0.604** | FINAL (user stopped run here, resumable): best holdout cls of the run, above v1 (0.8426); letter more than doubled vs v1; cpu_act at v1 level |
 
-**Run stopped at step 20000 by user decision (2026-07-03 ~21:00)** — TabArena results
+**Run stopped at step 20000 (2026-07-03 ~21:00)** — TabArena results
 showed zero-shot SOTA parity (TabPFN v2) out of reach at this scale; checkpoint
 step00020000.pt is the v1.1 final artifact. Resume later with
 `--resume checkpoints/v1.1/step00020000.pt` if ever desired.

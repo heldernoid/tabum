@@ -1,0 +1,39 @@
+[project]
+name = "tabum"
+version = "1.1.0"
+description = "tabUM: a small tabular in-context-learning foundation model (14M params, zero-shot classification and regression, native NaN handling, up to 100 classes)"
+readme = "README.md"
+license = { file = "LICENSE" }
+authors = [
+    { name = "Hélder Monteiro" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "huggingface-hub==1.22.0",
+    "numpy==2.4.6",
+    "safetensors==0.8.0",
+    "scikit-learn==1.9.0",
+    "scipy==1.17.1",
+    "torch==2.12.1",
+]
+
+[build-system]
+requires = ["uv_build>=0.9.30,<0.10.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "pytest==9.1.0",
+]
+notebook = [
+    "ipykernel==7.3.0",
+    "jupyterlab==4.6.0",
+]
+validation = [
+    "matplotlib==3.11.0",
+    "pandas==3.0.3",
+    "tabulate==0.9.0",
+]
+
+[tool.uv]
+default-groups = ["dev", "validation"]

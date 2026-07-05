@@ -24,7 +24,7 @@ Practical consequences:
 ## Install
 
 ```bash
-pip install git+https://github.com/iohelder/tabum
+pip install git+https://github.com/heldernoid/tabum
 ```
 
 ## Quickstart
